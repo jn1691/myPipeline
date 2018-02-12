@@ -6,6 +6,7 @@ pipeline {
         stage('Build') {
           steps {
             echo 'I am building.'
+            sh 'javac Hello.java'
           }
         }
         stage('sonar') {
