@@ -5,8 +5,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            echo 'i am build step'
-            echo 'I am another step in build'
+            echo 'I am building.'
           }
         }
         stage('sonar') {
